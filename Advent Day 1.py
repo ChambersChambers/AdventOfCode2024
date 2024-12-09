@@ -20,6 +20,18 @@ def test():
 
     print(distanceBetween)
 
+    #Part 2
+    similarityScore = 0
+    
+    for x in range(len(listLeft)):
+        testValue = listLeft[x]
+
+        for y in range(len(listRight)):
+            if listRight[y] == testValue:
+                similarityScore += listRight[y]
+    
+    print(similarityScore)
+
 
 if __name__ == "__main__":
     main()
